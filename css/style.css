@@ -6,7 +6,7 @@
 }
 :root {
   --mainColor: rgb(0, 120, 255);
-  --secondryColor:rgb(205, 224, 249);
+  --secondryColor: rgb(205, 224, 249);
 }
 
 .mainTitle::after {
@@ -34,60 +34,52 @@ a {
 }
 
 /* !Nav */
-.navbar{
-  opacity:90%;
+.navbar {
+  opacity: 90%;
 }
-.navbar .nav-item{
+.navbar .nav-item {
   width: fit-content;
   margin-block: 8px;
-  margin-inline:18px; 
-  position: relative; 
+  margin-inline: 18px;
+  position: relative;
 }
-.navbar .nav-item a:not(.dropdown-menu a){
+.navbar .nav-item a:not(.dropdown-menu a) {
   color: white;
   font-size: 15px;
   line-height: 24px;
   padding: 0;
 }
-.navbar .nav-item::after{
-content:"";
-position: absolute ;
-top: 115%;
-left: 0;
-width: 0;
-height: 3px;
-background-color: white;
-transition: width 0.5s;
+.navbar .nav-item::after {
+  content: "";
+  position: absolute;
+  top: 115%;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: white;
+  transition: width 0.5s;
 }
-.navbar .nav-item:hover:not(.mainDrop)::after{
+.navbar .nav-item:hover:not(.mainDrop)::after {
   width: 100% !important;
 }
-:has(.home:target) .nav-item:has(a[href="#home"])::after ,
-:has(.about:target) .nav-item:has(a[href="#about"])::after ,
-:has(.services:target) .nav-item:has(a[href="#services"])::after ,
-:has(.portfolio:target) .nav-item:has(a[href="#portfolio"])::after ,
-:has(.blog:target) .nav-item:has(a[href="#blog"])::after ,
-:has(.contact:target) .nav-item:has(a[href="#contact"])::after{
+.navbar .nav-item:has(.nav-link.active)::after {
   width: 100% !important;
 }
-.navbar .nav-item:has(.nav-link.active)::after{
-  width: 100% !important;
-}
-.navbar .mainDrop:hover .dropdown-menu.mainDropDown{
+.navbar .mainDrop:hover .dropdown-menu.mainDropDown {
   display: block;
 }
-.navbar .dropend:hover .dropdown-menu{
+.navbar .dropend:hover .dropdown-menu {
   display: block;
   top: 0;
   left: 100%;
 }
-.navbar .dropdown-item:hover{
-color: var(--mainColor);
+.navbar .dropdown-item:hover {
+  color: var(--mainColor);
 }
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active,
+.dropdown-item:active {
   background-color: unset;
 }
-
 .dropdown-menu.show {
   display: none;
 }
@@ -111,7 +103,6 @@ header {
   animation-duration: 8s;
   animation-iteration-count: infinite;
 }
-
 /* !About */
 .about ul li {
   padding-block: 8px;
@@ -212,14 +203,15 @@ header {
   background-color: var(--mainColor);
   border-color: var(--secondryColor) !important;
 }
-.contact textarea{
+.contact textarea {
   max-height: 200px;
 }
-.contact .button button{
+.contact .button button {
+  font-size: 19px;
   transition: all 0.5s;
 }
-.contact .button  button:hover{
-  background-color: rgba(0, 120, 255,0.85) ;
+.contact .button button:hover {
+  background-color: rgba(0, 120, 255, 0.85);
   box-shadow: 0px 0px 0px 5px var(--secondryColor);
 }
 
@@ -228,7 +220,7 @@ header {
   0% {
     content: "D|";
   }
-  1.35%{
+  1.35% {
     content: "De|";
   }
   2.7% {
@@ -267,7 +259,7 @@ header {
   17.55% {
     content: "De|";
   }
- 
+
   18.9% {
     content: "Dev|";
   }
@@ -448,10 +440,4 @@ header {
   100% {
     content: "|";
   }
- 
 }
-
-
-
-
-
