@@ -7,6 +7,7 @@
 :root {
   --mainColor: rgb(0, 120, 255);
   --secondryColor: rgb(205, 224, 249);
+  scroll-padding-top: 52px;
 }
 
 .mainTitle::after {
